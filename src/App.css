@@ -1,38 +1,319 @@
-.App {
-  text-align: center;
+.main_div{
+
+  height: 42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-image: url("desk.jpg");
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+/**Navbar**/
+
+.navbar {
+  background-color: black;
+  color: #FFFFFF;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box1 {
+  display: flex;
+
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box1 img {
+  margin-right: 0.5rem;
+}
+
+
+.box2 {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box2 i {
+  margin-left: 0.5rem;
+  margin-right: 3rem;
+}
+
+
+
+.box2 a{
+  text-decoration: none;
+  color: aquamarine;
+}
+
+
+
+/**Hero Section**/
+.child_div{
+  
+  padding: 1%;
+  height: 85%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heading{
+  height: 10%;
+  width:60%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.section1{
+  
+  height: 10%;
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addItems{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-left: 5%;
+
+}
+
+.addItems input{
+
+  height: 50%;
+  width:100%;
+  margin-right: 5%;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+.addItems img{
+  height: 80%;
+  cursor: pointer;
+}
+
+
+.section2{
+  
+  height: 70%;
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.showItems{
+  
+  padding: 3%;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: flex-start;
+
+}
+
+.eachItem{
+
+ 
+  height: 6%;
+  width: 100%;
+  margin-bottom: 0.5%;
+  background-color:aliceblue;
+  cursor: pointer;
+  padding: 1%;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  
+}
+.eachItem:hover{
+  background-color: #b1e9a3;
+ color:rgb(2, 19, 35);
+ border: 1px solid rgb(28, 1, 1);
+}
+
+.eachItem img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: 7%;
+}
+
+.eachItem img:hover{
+  height: 95%;
+  width: 10%; 
+  
+ 
+}
+
+
+.remove-item{
+  
+  height: 5%;
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.remove-item img:hover{
+  height: 55px;
+  
+}
+
+
+/**Footer CSS**/
+
+.Contact {
+
+  height: 25rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  font-family: "Segoe UI Black", "Arial Black", "Arial Rounded MT Bold";
+  font-weight: lighter;
+  font-size: small;
+  background-color: rgb(170, 217, 246);
+  
+  
+}
+
+
+
+
+.inner-contact {
+
+  margin-top: 5rem;
+  width: 80%;
+  height: 10rem;
+}
+
+.copyright {
+
+
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
 }
 
-.App-link {
-  color: #61dafb;
+.copyright i{
+  margin-right: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyright-text {
+
+  margin-right: 15rem;
+}
+
+
+.main-contact1 {
+
+  height: 30%;
+  line-height: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  align-items: center;
+
+}
+
+.main-contact1 p {
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.main-contact1 h2 {
+  color: rgb(21, 2, 2);
+
+}
+
+
+
+.main-contact2 {
+
+  margin-top: 4%;
+  height: 40%;
+  line-height: 0.5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+
+
+}
+
+
+.contact-location {
+
+
+  margin-right: 1rem;
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.contact-mail {
+
+
+  margin-right: 1rem;
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.main-contact2 .contact-location img {
+  margin-right: 1rem;
+}
+
+.main-contact2 .contact-mail img {
+  margin-right: 1rem;
 }
